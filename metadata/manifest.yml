@@ -2,7 +2,7 @@ Name: redis
 Cartridge-Short-Name: REDIS
 Display-Name: Redis
 Description: "https://github.com/jelastic-public-cartridges/jelastic-redis3-cartridge"
-Version: "3.0"
+Version: "3.2"
 Source-Url: https://github.com/jelastic-public-cartridges/jelastic-redis3-cartridge.git
 Cartridge-Version: 0.1.0
 License: GPL
