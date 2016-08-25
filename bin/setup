@@ -8,6 +8,10 @@ for dir in logs pid tmp env; do
 	mkdir -p $dir
 done
 
+erb /opt/repo/conf/redis.conf.erb > /opt/repo/conf/redis.conf; 
+
+erb /opt/repo/conf/redis-sentinel.conf.erb > /opt/repo/conf/redis-sentinel.conf;
+
 mv /opt/repo/logrotate /etc/logrotate.d/redis;
 
 chown root:root /etc/logrotate.d/redis;
