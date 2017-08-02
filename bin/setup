@@ -7,7 +7,7 @@
 for dir in logs pid tmp env; do
 	mkdir -p $dir
 done
-
+export REDIS_PASSWORD REDIS_MAXMEMORY REDIS_APPENDONLY
 erb /opt/repo/conf/redis.conf.erb > /opt/repo/conf/redis.conf; 
 
 erb /opt/repo/conf/redis-sentinel.conf.erb > /opt/repo/conf/redis-sentinel.conf;
